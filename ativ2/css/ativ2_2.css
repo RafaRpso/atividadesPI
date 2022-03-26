@@ -1,0 +1,31 @@
+body{
+    background-color: #c9c4c4;
+}
+#div_branca{
+    background-color: white;
+    height:500px;
+    width:50vw;
+    border: 10px dotted black;
+    display: flex;
+    justify-content: center;
+
+}
+#div_amarela{
+    background-color: yellow;
+    height:50px;
+    width:30%;
+}
+#div_laranja{
+    background-color: rgb(161, 113, 22);
+    height:100px;
+    width:30%;
+}
+#div_verde{
+    background-color: rgb(59, 211, 29);
+    color: white;
+    font-size:30px;
+    padding:50px;
+    margin: left 50px;
+    margin-top:50px
+
+}

@@ -1,0 +1,15 @@
+#div1{
+    background-color:red;
+    height:50px;
+    width:50px;
+    border: 2px solid green;
+     margin-top:100px;
+}
+#div2{
+    background-color:black;
+     width:50%;
+      height:50vh;
+      border: 10px dashed red;
+       margin-top:100px;
+       margin-left:100px;
+}
