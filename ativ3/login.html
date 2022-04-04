@@ -28,12 +28,12 @@
                     <h4> Email: </h4><br>
                     <input type="email" placeholder="user@domain.com">
                     <h4> Data de nascimento </h4><br>
-                    <input type="date">
+                    <input type="date" id="dataNasto">
                     <h4> CPF: </h4><br>
-                    <input placeholder="999-999-999-99" id="cpfUsuario">
+                    <input placeholder="999-999-999-99" value=""id="cpfUsuario">
                     <span class="linhaSeparacao"></span>
                     <h4> Senha: </h4><br>
-                    <input type="password" id="senhaUsuario">
+                    <input type="password" id="senhaUsuario" value="">
                     <h4> Confirmar senha: </h4><br>
                     <span id="situacaoSenha"> </span>
                     <input type="password" id="senhaUsuarioConfirmar" onkeyup="confirmadorSenha()">
@@ -54,7 +54,11 @@
     function logarAlert(){ 
         if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
         
+        if(dataNasto.value==null) return alert("Data de nascimento vazia")
+        
+        if(senhaConfirmar=="") return alert("Senha se encontra vazia.")
         alert('Você está logado (:\n Página por: Rafael Raposo')
+        
         
         
         }
