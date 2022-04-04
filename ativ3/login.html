@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navBar">
+        <div class="container">
+            <ul class="listaMain">
+                <li class="listaElementos destaque">Aquatech</li>
+                <li class="listaElementos">Sobre</li>
+                <li class="listaElementos">Produto</li>
+                <li class="listaElementos">Contato</li>
+                <li class="listaElementos">Login</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="conteudoLogin">
+        <div class="content">
+            <div class="container">
+                <div class="caixaInput">
+                    <h1 class="tituloLogin">Insira seus dados</h1>
+                    <span class="linhaSeparacao"></span>
+                    <h4> Email: </h4><br>
+                    <input type="email" placeholder="user@domain.com">
+                    <h4> Data de nascimento </h4><br>
+                    <input type="date">
+                    <h4> CPF: </h4><br>
+                    <input placeholder="999-999-999-99" id="cpfUsuario">
+                    <span class="linhaSeparacao"></span>
+                    <h4> Senha: </h4><br>
+                    <input type="password" id="senhaUsuario">
+                    <h4> Confirmar senha: </h4><br>
+                    <span id="situacaoSenha"> </span>
+                    <input type="password" id="senhaUsuarioConfirmar" onkeyup="confirmadorSenha()">
+                    <button onclick="logarAlert()" class="botaoLogar">
+                        Cadastrar</button> 
+    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+<script>
+    var senhaPendente=senhaUsuario.value;
+    var senhaConfirmar=senhaUsuarioConfirmar.value; 
+    
+    function logarAlert(){ 
+        if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
+        
+        alert('Você está logado (:\n Página por: Rafael Raposo')
+        
+        
+        }
+    function confirmadorSenha(){
+        senhaPendente=senhaUsuario.value;
+        senhaConfirmar=senhaUsuarioConfirmar.value;
+        if(senhaUsuario!=null) {
+            if(senhaPendente!=senhaConfirmar){
+                situacaoSenha.innerHTML='<span id="senhasDiferentes">As senhas são distintas!</span>'
+            }
+            else {
+                situacaoSenha.innerHTML='As senhas são iguais'
+            }
+        }
+        
+       
+    }
+</script>   

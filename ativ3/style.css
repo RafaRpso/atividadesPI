@@ -1,0 +1,124 @@
+:root{
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    --background-color:  #040303;
+    --primary-color: #7A0BC0;
+    --highlight-color: #FA58B6;
+    --font-color: #040303;
+}
+
+body{
+    margin: 0 ; 
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+.navBar{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    color:white;
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+
+
+}
+.container{
+    justify-content: center;
+    display:flex;
+    width: 80%;
+}
+.listaMain{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-direction: row;
+
+
+}
+.listaElementos{
+    margin-right:10vw;
+}
+.listaElementos:hover{
+    color: var(--highlight-color);
+    transition: 400ms;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    width:40%;
+    padding:30px;
+
+    border-radius:20px;
+    background-color: white;
+
+}
+h1{
+    margin:0;
+    padding:0;
+    font-size:32px;
+  
+}
+h4{
+    font-size:19px;
+    margin:0 auto;
+    margin-top:15px;
+    padding:0;
+}
+input{
+    border-radius: 20px;
+    border: none;
+    background-color: #d4d4d4;
+    width:60%;
+    padding:8px;
+}
+
+.caixaInput{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    padding:2%;
+    width:100%;
+}
+.conteudoLogin{
+    width:100%;
+    height:100vh;
+    background-image: url("img/jellyfish.png");
+    background-repeat: no-repeat;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque{
+    color: var(--highlight-color);
+    font-size: 26px;
+}
+.botaoLogar{
+    padding:15px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color:white;
+    width:30%;
+    margin-top:15%;
+    font-family: 200px;
+    font-weight: bold;
+}
+.botaoLogar:hover{
+    filter: invert();
+    transition: 400ms;
+    border: 1px solid white;
+}
+#situacaoSenha{
+    font-size: 16px ;
+    margin-bottom: 5%;
+}
+.linhaSeparacao{
+    width:50%;
+    border: 1px solid rgb(218, 218, 218);
+    margin: 5%;
+}
