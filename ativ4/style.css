@@ -26,6 +26,17 @@ body{
 #container6{
     justify-content: space-evenly;
 }
+#container7{
+    flex-direction: column-reverse;
+}
+#containerDesafio{
+    flex-direction: row-reverse;
+    justify-content: flex-end; /* Joguei o jogo do sapo xd */
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
 .quadrantes{
     display:flex;
     background-color:rgb(255, 167, 167);
@@ -37,5 +48,5 @@ body{
     font-weight: bold;
     width:5%;
     height:10vh;
-    border-radius: 15px;
+
 }
