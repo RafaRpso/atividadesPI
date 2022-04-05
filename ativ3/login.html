@@ -54,17 +54,16 @@
     function logarAlert(){ 
         let datanasc=dataNasto.value
         email = emailusuario.value
-    
-        if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
-        
+        if(String(email.indexOf('@'))==-1) return alert("O email não é válido.")
+
         if(dataNasto.value==null) return alert("Data de nascimento vazia")
-        
+
+        if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
+                    
         if(senhaConfirmar=="") return alert("Senha se encontra vazia.")
         
         if(senhaPendente!=senhaConfirmar) return alert("As senhas estão diferentes.")
-        
-        if(String(email.indexOf('@'))==-1) return alert("O email não é válido.")
-
+  
         alert('Você está logado (:\n Página por: Rafael Raposo')
         
         }
