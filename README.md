@@ -1,7 +1,7 @@
-## Atividades de PI
-Atividades passsadas pela Júlia na aula de PI com entrega via Github <br>
-<br>
-### Atividade 1 - CSS
+# Atividades de PI
+Atividades passsadas pela Júlia na aula de PI com entrega via Github 
+<br><br>
+## Atividade 1 - CSS
 É relacionado ao CSS externo e interno, de modo que aprendemos a separar e aprendemos alguns elementos básicos do CSS, vimos: VH, LOREM, FONT-FAMILY, BACKGROUND-COLOR, etc 
 <br><br>
 ## Atividade 2 - Flexbox
