@@ -12,7 +12,7 @@
         <div class="container">
             <ul class="listaMain">
                 <li class="listaElementos destaque">Aquatech</li>
-                <li class="listaElementos">Sobre</li>
+                <li class="listaElementos">Sobre</li><div class=""></div>
                 <li class="listaElementos">Produto</li>
                 <li class="listaElementos">Contato</li>
                 <li class="listaElementos">Login</li>
@@ -26,7 +26,7 @@
                     <h1 class="tituloLogin">Insira seus dados</h1>
                     <span class="linhaSeparacao"></span>
                     <h4> Email: </h4><br>
-                    <input type="email" placeholder="user@domain.com">
+                    <input type="email" placeholder="user@domain.com" id="emailusuario">
                     <h4> Data de nascimento </h4><br>
                     <input type="date" id="dataNasto">
                     <h4> CPF: </h4><br>
@@ -50,16 +50,22 @@
 <script>
     var senhaPendente=senhaUsuario.value;
     var senhaConfirmar=senhaUsuarioConfirmar.value; 
-    
+    var email="";
     function logarAlert(){ 
-        if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
-        
+        let datanasc=dataNasto.value
+        email = emailusuario.value
+
+        if(String(email.indexOf('@'))==-1) return alert("O email não é válido.")
+
         if(dataNasto.value==null) return alert("Data de nascimento vazia")
-        
+
+        if(cpfUsuario.value==Number(cpfUsuario.value)) return alert('CPF INCORRETO. Insira a pontuação')
+                    
         if(senhaConfirmar=="") return alert("Senha se encontra vazia.")
+        
+        if(senhaPendente!=senhaConfirmar) return alert("As senhas estão diferentes.")
+  
         alert('Você está logado (:\n Página por: Rafael Raposo')
-        
-        
         
         }
     function confirmadorSenha(){
