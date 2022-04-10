@@ -1,0 +1,116 @@
+/* vi no canal "FIRESHIP" como definir variaveis e coisas globais no CSS, não sei se podia usar, mas não quis me limitar nisso, porque não foge do proposito da atividade */
+ 
+
+
+/* VIDEO DE REFERENCIA QUE USEI PARA APLICAR AS COISAS NÃO ENSINADAS: https://www.youtube.com/watch?v=biOMz4puGt8 */
+/* Vi esse vídeo e fiquei com vontade de aplicar, mas claro que no tema do site */ 
+
+
+:root{ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --corGrafico-umi:#916BBF;
+    --corGrafico-temp:#C996CC; 
+    --darkTheme-cor:#04293A;
+    --cor_destaque:#f7b0c0;
+    --corPadrao:#4c4564;
+    
+    color:var(--corPadrao)
+
+}
+body{
+    margin:0;
+    padding:0;
+}
+.conteudoSite{
+    margin-left: 1rem; /* Por conta do menu Lateral */ 
+    display:flex;
+
+}
+.content{
+    margin-top:2%;
+}
+#imagemNav{
+    width:25px;
+    display:flex;
+    height:15%;
+    margin-top: 10px;
+}
+.navBar img{
+    width:25px;
+    filter:invert();
+    padding:2px;
+}
+nav{
+    display:none;
+
+
+}
+
+li:hover{
+    color:#BC6FF1;
+    transition: 200ms;
+}
+.navBar{
+    height:100vh;
+    width:5rem;
+    margin:0;
+    position:fixed; /* ficar por cima dos elementos da pagina, e assim nao jogar eles pra baixo */ 
+    background-color: #0A043C;
+    color: white;
+    font-weight: bold;
+    display:flex;
+    padding:1rem;
+}
+.navBar ul{
+    padding:0;
+   margin:0;
+   list-style:none;
+   display: flex;
+   flex-direction: column;
+   height:100%;
+
+   justify-content: space-around;
+
+ 
+}
+.navBar-li{
+    padding:2px;
+    border-bottom: 1px solid #D89216;
+ 
+}
+.graficos{
+    display:flex;
+    width:100%;
+    justify-content: space-around;    
+ 
+}
+.graficoContent h3{
+    text-align:  center;
+}
+.alinhamento{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--corPadrao);
+    width:100%;
+    margin:10px;
+}
+
+.graficoContent{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid var(--corPadrao);
+    border-radius: 25px;;
+    margin:2px;
+    width:30%;
+    padding:5vh;
+ 
+}
+
+.containerPag{
+    width:100%;
+
+}
+
+
