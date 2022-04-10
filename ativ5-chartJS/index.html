@@ -69,20 +69,38 @@
             label: 'Umidade',
             backgroundColor: '#321F28',
             borderColor: '#321F28',
-            data: [80, 81, 80, 85, 84, 82],
+            data: [80, 82, 80, 85, 80, 83],
         },
 
         {
             label: 'Temperatura',
             backgroundColor: '#E79E4F',
             borderColor: '#E79E4F',
-            data: [30, 30, 28, 25, 22, 23, 22],
+            data: [30, 29, 28, 25, 22, 23],
         }
         ]
 
 
     };
+    const dataBar = {
+        labels: labels,
+        datasets: [{
+            label: 'Umidade',
+            backgroundColor: '#321F28',
+            borderColor: '#321F28',
+            data: [90, 89, 93, 87, 88, 82],
+        },
 
+        {
+            label: 'Temperatura',
+            backgroundColor: '#E79E4F',
+            borderColor: '#E79E4F',
+            data: [22, 24 ,27, 23, 20, 18],
+        }
+        ]
+
+
+    };
     const config = {
         type: 'line',
         data: data,
@@ -90,7 +108,7 @@
     };
     const configBar = {
         type: 'bar',
-        data: data,
+        data: dataBar,
         options: {}
     };
 
