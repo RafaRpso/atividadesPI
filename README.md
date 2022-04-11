@@ -10,7 +10,7 @@ Atividades passsadas pela Júlia na aula de PI com entrega via Github
 ## <a src='https://github.com/RafaRpso/atividadesPI/tree/main/ativ3-cadastro'>Atividade 3 - Cadastro </a>
 É relacionado a criação de uma tela de cadastro, de modo que fora proposto criar uma tela de Login semelhante a feita em sala de aula. A utilização de todos os elementos aprendidos anteriormente e nas demais aulas se demonstrou essencial
 <br><br>
-##<a src='https://github.com/RafaRpso/atividadesPI/tree/main/ativ4-flexBox2'>Atividade 4 - Flexbox 2 </a>
+## <a src='https://github.com/RafaRpso/atividadesPI/tree/main/ativ4-flexBox2'>Atividade 4 - Flexbox 2 </a>
 É relacionado, novamente, ao uso de flexbox para responsividade. Mas de maneira bem mais desafiadora, foi proposto em conjunto com o exercício 4. Tivemos que usar FLEX-DIRECTION, ALIGN-ITEMS, JUSTIFY-CONTENT e demais propriedades do DISPLAY:FLEX
 <br><br>
 ## <a src='https://github.com/RafaRpso/atividadesPI/tree/main/ativ5-chartJS'>Atividade 5 - ChartJS </a>
